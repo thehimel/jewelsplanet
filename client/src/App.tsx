@@ -1,8 +1,15 @@
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Home from "./Home.tsx";
+
 const App = () => {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
+    <BrowserRouter>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 };
 
