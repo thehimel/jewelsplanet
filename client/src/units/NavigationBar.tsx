@@ -1,6 +1,16 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link} from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  NavbarItem,
+} from "@nextui-org/react";
 import {AcmeLogo} from "./AcmeLogo.tsx";
+import {ThemeSwitcher} from "./Theme/ThemeSwitcher.tsx";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -16,6 +26,9 @@ export default function App() {
       </NavbarContent>
 
       <NavbarContent justify="end">
+        <NavbarItem>
+          <ThemeSwitcher/>
+        </NavbarItem>
         <NavbarMenuToggle className="sm:hidden" aria-label={isMenuOpen ? "Close menu" : "Open menu"}/>
       </NavbarContent>
 
