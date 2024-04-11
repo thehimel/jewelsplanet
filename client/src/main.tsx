@@ -1,3 +1,4 @@
+import {ThemeProvider} from "next-themes";
 import ReactDOM from 'react-dom/client'
 import {NextUIProvider} from "@nextui-org/react";
 import {Provider} from "react-redux";
@@ -10,7 +11,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
       <NextUIProvider>
-        <App />
+        <ThemeProvider attribute="class" defaultTheme="dark">
+          <App />
+        </ThemeProvider>
       </NextUIProvider>
     </PersistGate>
   </Provider>
