@@ -8,7 +8,7 @@ const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  whitelist: ['darkMode'],
+  blacklist: [],
 };
 
 // combineReducers is mandatory to avoid type issues.
