@@ -3,6 +3,7 @@ import {useEffect} from "react";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./Home.tsx";
 import {useAppSelector} from "./store/hooks.ts";
+import Footer from "./units/Navigation/Footer.tsx";
 import NavigationBar from "./units/Navigation/NavigationBar.tsx";
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home/>}/>
         </Routes>
+        <Footer/>
       </main>
     </BrowserRouter>
   );
