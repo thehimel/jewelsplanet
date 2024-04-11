@@ -10,7 +10,7 @@ import {
   NavbarItem,
 } from "@nextui-org/react";
 import {AcmeLogo} from "./AcmeLogo.tsx";
-import {ThemeSwitcher} from "./Theme/ThemeSwitcher.tsx";
+import {ThemeSwitcher} from "../Theme/ThemeSwitcher.tsx";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
