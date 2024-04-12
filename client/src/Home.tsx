@@ -1,7 +1,16 @@
+import Product from "@/components/products/Product.tsx";
+
 const Home = () => {
   return (
-    <div>
-      <h1>Hello, World!</h1>
+    <div className="p-2">
+      <div className="flex flex-wrap gap-2 justify-center">
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+        <Product/>
+      </div>
     </div>
   );
 };
