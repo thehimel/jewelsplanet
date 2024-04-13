@@ -19,7 +19,7 @@ import {
 
 const Purchase = () => {
   return (
-    <Card className="w-[350px]">
+    <Card className="w-[400px]">
       <CardHeader>
         <CardTitle>Golden Necklace</CardTitle>
         <CardDescription className="text-foreground pt-4">

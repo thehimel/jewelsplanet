@@ -20,7 +20,7 @@ const ProductImage = () => {
   };
 
   return (
-    <Card className="max-w-[500px] relative overflow-hidden" onMouseMove={handleMouseMove}>
+    <Card className="max-w-[400px] relative overflow-hidden" onMouseMove={handleMouseMove}>
       <Image
         alt="Product Image"
         className="transition-transform duration-300 transform hover:scale-zoom hover:cursor-plus rounded-none"
