@@ -12,7 +12,7 @@ import {
 import {AcmeLogo} from "./AcmeLogo.tsx";
 import {ThemeSwitcher} from "../Theme/ThemeSwitcher.tsx";
 
-export default function App() {
+const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = ["Profile", "Settings", "Help & Feedback", "Log Out"];
 
@@ -49,3 +49,6 @@ export default function App() {
     </Navbar>
   );
 }
+
+export default NavigationBar;
+
