@@ -49,8 +49,8 @@ const ProductDetail = () => {
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
+        <Button variant="outline">Add to Cart</Button>
+        <Button>Buy Now</Button>
       </CardFooter>
     </Card>
   )
