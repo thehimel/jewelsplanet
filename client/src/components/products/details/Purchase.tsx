@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button.tsx"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -22,12 +21,14 @@ const Purchase = () => {
     <Card className="w-[400px]">
       <CardHeader>
         <CardTitle>Golden Necklace</CardTitle>
-        <CardDescription className="text-foreground pt-4">
-          <Rating value={4.5} count={16}/>
-          <p>In stock</p>
-          <p className="">$ 900</p>
-        </CardDescription>
       </CardHeader>
+
+      <CardContent>
+        <Rating value={4.5} count={16}/>
+        <p>In stock</p>
+        <p className="">$ 900</p>
+      </CardContent>
+
       <CardContent>
         <form>
           <div className="grid w-full items-center gap-4">
