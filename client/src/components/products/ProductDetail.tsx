@@ -32,16 +32,16 @@ const ProductDetail = () => {
               <Input id="name" placeholder="Name of your project" />
             </div>
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="framework">Framework</Label>
-              <Select>
-                <SelectTrigger id="framework">
+              <Label htmlFor="quantity">Quantity</Label>
+              <Select defaultValue="1">
+                <SelectTrigger id="quantity">
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                  <SelectItem value="next">Next.js</SelectItem>
-                  <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                  <SelectItem value="astro">Astro</SelectItem>
-                  <SelectItem value="nuxt">Nuxt.js</SelectItem>
+                  <SelectItem value="1">1</SelectItem>
+                  <SelectItem value="2">2</SelectItem>
+                  <SelectItem value="3">3</SelectItem>
+                  <SelectItem value="4">4</SelectItem>
                 </SelectContent>
               </Select>
             </div>
