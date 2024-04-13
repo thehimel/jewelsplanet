@@ -1,5 +1,5 @@
 import App from "@/App.tsx";
-import ProductDetail from "@/components/products/ProductDetail.tsx";
+import ProductDetail from "@/components/products/details/ProductDetail.tsx";
 import Home from "@/Home.tsx";
 import {createBrowserRouter, Route, createRoutesFromElements} from "react-router-dom";
 
