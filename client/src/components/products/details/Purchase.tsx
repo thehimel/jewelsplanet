@@ -17,7 +17,7 @@ import {
   SelectValue,
 } from "@/components/ui/select.tsx"
 
-const ProductDetail = () => {
+const Purchase = () => {
   return (
     <Card className="w-[350px]">
       <CardHeader>
@@ -56,4 +56,4 @@ const ProductDetail = () => {
   )
 }
 
-export default ProductDetail;
+export default Purchase;
