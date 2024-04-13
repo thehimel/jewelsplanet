@@ -1,3 +1,4 @@
+import Rating from "@/components/Rating.tsx";
 import { Button } from "@/components/ui/button.tsx"
 import {
   Card,
@@ -7,7 +8,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card.tsx"
-import { Input } from "@/components/ui/input.tsx"
 import { Label } from "@/components/ui/label.tsx"
 import {
   Select,
@@ -22,15 +22,15 @@ const Purchase = () => {
     <Card className="w-[350px]">
       <CardHeader>
         <CardTitle>Golden Necklace</CardTitle>
-        <CardDescription>In stock</CardDescription>
+        <CardDescription className="text-foreground pt-4">
+          <Rating value={4.5} count={16}/>
+          <p>In stock</p>
+          <p className="">$ 900</p>
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <form>
           <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name">Name</Label>
-              <Input id="name" placeholder="Name of your project" />
-            </div>
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="quantity">Quantity</Label>
               <Select defaultValue="1">
