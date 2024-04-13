@@ -13,13 +13,13 @@ const App = () => {
   }, [darkMode, setTheme]);
 
   return (
-    <>
+    <div className="min-h-screen">
       <NavigationBar/>
-      <main>
+      <main className="mb-14">
         <Outlet/>
       </main>
       <Footer/>
-    </>
+    </div>
   );
 };
 
