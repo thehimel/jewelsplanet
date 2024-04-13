@@ -1,0 +1,7 @@
+.hover\:scale-zoom:hover {
+  transform: scale(4);
+}
+
+.hover\:cursor-plus:hover {
+  cursor: cell;
+}
