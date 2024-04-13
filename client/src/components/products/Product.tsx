@@ -8,9 +8,7 @@ const Product = () => {
         <h4 className="font-bold text-large">Frontend Radio</h4>
         <p className="text-tiny uppercase font-bold text-default-500">Daily Mix</p>
         <small className="">$ 900</small>
-        <div className="flex">
-          <Rating value={4.5} count={16}/>
-        </div>
+        <Rating value={4.5} count={16}/>
       </CardHeader>
       <CardBody className="overflow-visible pt-1">
         <Image

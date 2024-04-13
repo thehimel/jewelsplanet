@@ -15,7 +15,7 @@ const Rating: FC<RatingProps> = ({value, color, count}) => {
   }
 
   return (
-    <div className="flex gap-2">
+    <div className="flex flex-wrap gap-2">
       <div className={`flex ${color}`}>
         {stars}
       </div>
