@@ -21,8 +21,8 @@ const Purchase = () => {
   return (
     <Card className="w-[350px]">
       <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
+        <CardTitle>Golden Necklace</CardTitle>
+        <CardDescription>In stock</CardDescription>
       </CardHeader>
       <CardContent>
         <form>
