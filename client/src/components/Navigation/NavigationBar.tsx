@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import {
   Navbar,
   NavbarBrand,
@@ -6,7 +7,6 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
   NavbarItem,
 } from "@nextui-org/react";
 import {AcmeLogo} from "./AcmeLogo.tsx";
@@ -19,10 +19,12 @@ const NavigationBar = () => {
   return (
     <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
-        <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">JewelsPlanet</p>
-        </NavbarBrand>
+        <Link to="/">
+          <NavbarBrand>
+            <AcmeLogo />
+            <p className="font-bold text-inherit">JewelsPlanet</p>
+          </NavbarBrand>
+        </Link>
       </NavbarContent>
 
       <NavbarContent justify="end">
@@ -35,12 +37,7 @@ const NavigationBar = () => {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              className="w-full"
-              color={index === 1 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"}
-              href="#"
-              size="lg"
-            >
+            <Link to="#" className={`${item.toLowerCase() === 'log out' ? 'text-danger' : 'text-foreground'}`}>
               {item}
             </Link>
           </NavbarMenuItem>
@@ -51,4 +48,3 @@ const NavigationBar = () => {
 }
 
 export default NavigationBar;
-
