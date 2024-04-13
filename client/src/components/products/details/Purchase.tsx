@@ -34,7 +34,7 @@ const Purchase = () => {
           <div className="grid w-full items-center gap-4">
             <div className="flex flex-col space-y-1.5">
               <Label htmlFor="quantity">Quantity</Label>
-              <Select defaultValue="1">
+              <Select defaultValue="1" name="quantity">
                 <SelectTrigger id="quantity">
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
