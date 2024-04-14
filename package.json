@@ -1,7 +1,6 @@
 {
   "name": "jewelsplanet",
   "version": "1.0.0",
-  "type": "module",
   "description": "A web store for selling jewellery online built with MERN stack.",
   "main": "index.js",
   "scripts": {
