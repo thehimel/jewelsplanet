@@ -1,6 +1,6 @@
 import express, { Request, Response, Application } from 'express';
 import cors from 'cors';
-import {isDevelopment, PORT} from './config.ts';
+import {isDevelopment, PORT} from './config/env.ts';
 
 const app: Application = express();
 
