@@ -13,8 +13,6 @@ const productSchema = new mongoose.Schema({
   rating: {type: Number, required: true, default: 0, min: 0, max: 5},
   reviews: [reviewSchema],
   stock: {type: Number, required: true, default: 0},
-  created: {type: Date, required: true, default: Date.now},
-  modified: {type: Date, required: true, default: Date.now},
   offer: {type: Number, required: true, default: 0, min: 0, max: 100},
   offerValidTill: {type: Date, required: true, default: thirtyDaysFromNow},
 }, {
