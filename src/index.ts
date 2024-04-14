@@ -1,7 +1,9 @@
 import express, { Request, Response, Application } from 'express';
 import cors from 'cors';
-import {isDevelopment, PORT} from './config/env.ts';
+import connectDatabase from "./config/db.ts";
+import {isDevelopment, PORT} from "./config/env.ts";
 
+connectDatabase();
 const app: Application = express();
 
 isDevelopment && app.use(cors({ origin: 'http://localhost:5173' }));
