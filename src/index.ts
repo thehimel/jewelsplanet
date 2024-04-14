@@ -1,7 +1,7 @@
 import express, { Request, Response, Application } from 'express';
 import cors from 'cors';
-import connectDatabase from "./config/db.ts";
-import {CLIENT_URI, isDevelopment, PORT} from "./config/env.ts";
+import connectDatabase from "./config/database.ts";
+import {CLIENT_URI, isDevelopment, PORT} from "./config/constants.ts";
 
 connectDatabase();
 const app: Application = express();
