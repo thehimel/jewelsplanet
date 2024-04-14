@@ -15,3 +15,15 @@ app.get('/api/hello-word', (req: Request, res: Response) => {
     "message": "Hello, Word!",
   });
 });
+
+app.get('/api/products', (req: Request, res: Response) => {
+  res.send({
+    data: [],
+  });
+});
+
+app.get('/api/products/:id', (req: Request, res: Response) => {
+  res.send({
+    data: {},
+  });
+});
