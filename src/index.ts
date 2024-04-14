@@ -1,12 +1,12 @@
 import express, { Request, Response, Application } from 'express';
 import cors from 'cors';
 import connectDatabase from "./config/db.ts";
-import {isDevelopment, PORT} from "./config/env.ts";
+import {CLIENT_URI, isDevelopment, PORT} from "./config/env.ts";
 
 connectDatabase();
 const app: Application = express();
 
-isDevelopment && app.use(cors({ origin: 'http://localhost:5173' }));
+isDevelopment && app.use(cors({ origin: CLIENT_URI }));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
