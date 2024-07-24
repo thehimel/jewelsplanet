@@ -7,10 +7,12 @@
 
 ### Install Backend
 
-* `npm install`
+* Install: `npm install`
+* Run: `npm run dev`
 
 ### Install Frontend
 
+* Install: `npm install`
 * Run: `npm run dev`
 * Build: `npx vite build`
 
