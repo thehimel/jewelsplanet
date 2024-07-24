@@ -22,7 +22,7 @@ const NavigationBar = () => {
         <Link to="/">
           <NavbarBrand>
             <AcmeLogo />
-            <p className="font-bold text-inherit">JewelsPlanet</p>
+            <p className="font-bold text-inherit">Client</p>
           </NavbarBrand>
         </Link>
       </NavbarContent>
