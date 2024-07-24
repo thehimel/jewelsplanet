@@ -1,7 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
 import {slices} from "../constants.ts";
 
-interface BaseState {
+export interface BaseState {
   darkMode: boolean;
 }
 
