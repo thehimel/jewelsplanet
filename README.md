@@ -1,6 +1,5 @@
-# JewelsPlanet
+# Project
 
-- A web store for selling jewellery online built with MERN stack.
 - Next UI and shadcn is used together along with an express server in this project.
 
 ## Install
